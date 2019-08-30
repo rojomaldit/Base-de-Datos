@@ -13,6 +13,6 @@ SELECT actor_name
 
 -- EJ 13
 SELECT actor_name, title
-  FROM movies
-    JOIN actor_rol ON movies.MID = actor_rol.MID
-    JOIN actors ON actors.AID = actor_rol.AID;
+  FROM actors
+    LEFT JOIN actor_rol ON actors.AID = actor_rol.AID
+    LEFT JOIN movies ON movies.MID = actor_rol.MID 
