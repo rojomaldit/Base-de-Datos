@@ -1,10 +1,5 @@
 -- EJ 11 
 
-SELECT title
-  FROM movies
-    JOIN actor_rol ON movies.MID = actor_rol.MID
-    JOIN actor_rol ON actors.AID = actor_rol.AID
-  WHERE actor_name = "Octa"
 
 -- SELECT column-names
 --   FROM table-name1 JOIN table-name2
@@ -21,4 +16,4 @@ SELECT title
 
 -- EJ 12
 SELECT actor_name FROM actor_rol JOIN actors
-WHERE actor_rol.rol_name = ''
+WHERE actor_rol.rol_name = '' AND actors.AID = actor_rol.AID

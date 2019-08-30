@@ -9,7 +9,7 @@ INSERT INTO actors (AID, actor_name) VALUES (40, 'Actor que no actua');
 INSERT INTO actors (AID, actor_name) VALUES (4, 'Lucrecia :D');
 INSERT INTO actors (AID, actor_name) VALUES (5, 'Charlie Chaplin');
 
-INSERT INTO movies (MID, title) VALUES (1, 'Charles Chaplin movie');
+INSERT INTO movies (MID, title) VALUES (1, 'Charlie Chaplin movie');
 INSERT INTO movies (MID, title) VALUES (2, 'Pacman the movie');
 INSERT INTO movies (MID, title) VALUES (3, 'Pelicula 123');
 INSERT INTO movies (MID, title) VALUES (4, 'Project X');
