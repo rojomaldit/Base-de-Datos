@@ -5,9 +5,9 @@ delete from actor_rol;
 INSERT INTO actors (AID, actor_name) VALUES (1, 'Uzii');
 INSERT INTO actors (AID, actor_name) VALUES (2, 'Octa');
 INSERT INTO actors (AID, actor_name) VALUES (3, 'Lucas');
-INSERT INTO actors (AID, actor_name) VALUES (40, 'Actor que no actua');
 INSERT INTO actors (AID, actor_name) VALUES (4, 'Lucrecia :D');
 INSERT INTO actors (AID, actor_name) VALUES (5, 'Charlie Chaplin');
+INSERT INTO actors (AID, actor_name) VALUES (6, 'Kenny Bell');
 
 INSERT INTO movies (MID, title) VALUES (1, 'Charlie Chaplin movie');
 INSERT INTO movies (MID, title) VALUES (2, 'Pacman the movie');
