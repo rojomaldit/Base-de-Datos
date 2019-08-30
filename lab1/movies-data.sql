@@ -20,4 +20,3 @@ INSERT INTO actor_rol (MID, AID, rol_name) VALUES (5, 3, 'Protagonist');
 INSERT INTO actor_rol (MID, AID, rol_name) VALUES (5, 1, 'Cameraman');
 INSERT INTO actor_rol (MID, AID, rol_name) VALUES (4, 4, 'Secondary character');
 INSERT INTO actor_rol (MID, AID, rol_name) VALUES (1, 5, 'Director');
-INSERT INTO actor_rol (MID, AID, rol_name) VALUES (0, 40, '');
