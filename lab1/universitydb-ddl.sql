@@ -1,4 +1,5 @@
-USE mysql_g6_main;
+CREATE DATABASE IF NOT EXISTS university;
+USE university;
 
 drop table if exists prereq;
 drop table if exists time_slot;

@@ -1,5 +1,3 @@
-USE mysql_g6_main;
-
 delete from prereq;
 delete from time_slot;
 delete from advisor;
