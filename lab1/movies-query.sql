@@ -18,3 +18,7 @@ SELECT title
 --   JOIN OrderItem I ON O.Id = I.OrderId 
 --   JOIN Product P ON P.Id = I.ProductId
 -- ORDER BY O.OrderNumber
+
+-- EJ 12
+SELECT actor_name FROM actor_rol JOIN actors
+WHERE actor_rol.rol_name = ''
