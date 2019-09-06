@@ -3,7 +3,7 @@ WITH aux AS (
     from takes
   GROUP BY course_id, semester, sec_id, year
 )
-SELECT MAX(inscriptions), MIN(inscriptions) from aux;
+SELECT MAX(inscriptions) AS Max, MIN(inscriptions) AS Min from aux;
 
 -- *********************** CARDELINO ***********************
 
