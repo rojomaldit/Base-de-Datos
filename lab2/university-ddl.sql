@@ -1,9 +1,9 @@
 WITH aux AS (
-  SELECT sec_id, course_id, semester, year, count(takes.ID) AS inscriptions
+  SELECT count(takes.ID) AS ins
     from takes
   GROUP BY course_id, semester, sec_id, year
 )
-SELECT MAX(inscriptions) AS Max, MIN(inscriptions) AS Min from aux;
+SELECT MAX(ins), MIN(ins) from aux;
 
 -- *********************** CARDELINO ***********************
 
