@@ -1,19 +1,19 @@
-drop table if exists actors;
-drop table if exists movies;
-drop table if exists actor_rol;
-
 CREATE TABLE actors(
-	AID INT(6),
-    actor_name VARCHAR(20)
+	AID int not null auto_increment,
+    actor_name varchar(30),
+    primary key(AID)
 );
 
 CREATE TABLE movies(
-	MID INT(6),
-    title VARCHAR(22)
+	MID int not null auto_increment,
+    title varchar(30),
+    primary key(MID)
 );
 
 CREATE TABLE actor_rol(
-	MID INT(6),
-    AID VARCHAR(20),
-    rol_name VARCHAR(20)
+	MID int,
+    AID int,
+    rol_name varchar(30),
+    foreign key (AID) references actors(AID),
+    foreign key (MID) references movies(MID)
 );
