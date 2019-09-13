@@ -15,7 +15,7 @@ HAVING cnt = (
 	) AS aux
 );
 
--- EJ 3
+-- EJ 3 part 2
 SELECT MAX(ins), MIN(ins) FROM (
   SELECT count(ID) AS ins
   FROM takes as T RIGHT JOIN section as S
@@ -27,3 +27,5 @@ SELECT MAX(ins), MIN(ins) FROM (
 ) AS foo;
 
 -- EJ 4
+SELECT * FROM course
+WHERE title LIKE 'Jap%';
