@@ -59,10 +59,57 @@ insert into Peliculas values (1, 'X', 'asdasdasdasd', 120, '10-11-17', 'MARVEL')
 insert into Peliculas values (2, 'X1', 'asdasr3444r3dasdasd', 123, '16-11-10', 'Xd');
 insert into Peliculas values (3, 'X2', 'asdasdasdas34r34rd', 60, '11-11-18', 'MARVasdEL');
 insert into Peliculas values (4, 'X3', '34r3r4asdasdasdasd', 200, '11-11-14', 'SONY');
-insert into Peliculas values (5, 'X4', 'as34r3rdasdag5g4sdasd', 133, '11-11-15', 'KALIFA PRODUCTIONS');
+insert into Peliculas values (5, 'X4', 'as34r3rdasdag5g4sdasd', 133, '11-11-15', 'KHALIFA PRODUCTIONS');
 insert into Peliculas values (6, 'X5', 'asdasdf45g45gasdasd', 112, '11-11-18', 'PELASO');
 insert into Peliculas values (7, 'X6', 'asdasdasdasdfgvdffvd', 100, '11-11-20', 'ROQUI');
 insert into Peliculas values (8, 'X7', 'asdasdadsjfnjkdfnsdasd', 50, '11-11-11', 'PRODUCTORA18');
+insert into Peliculas values (11, 'X', 'asdasdasdasd', 120, '12-12-17', 'MARVEL');
+insert into Peliculas values (22, 'X1', 'asdasr3444r3dasdasd', 123, '12-12-17', 'Xd');
+insert into Peliculas values (33, 'X2', 'asdasdasdas34r34rd', 60, '12-12-17', 'MARVasdEL');
+insert into Peliculas values (44, 'X3', '34r3r4asdasdasdasd', 200, '12-12-17', 'SONY');
+insert into Peliculas values (55, 'X4', 'as34r3rdasdag5g4sdasd', 133, '12-12-17', 'KHALIFA PRODUCTIONS');
+insert into Peliculas values (66, 'X5', 'asdasdf45g45gasdasd', 112, '12-12-17', 'PELASO');
+insert into Peliculas values (77, 'X6', 'asdasdasdasdfgvdffvd', 100, '12-12-17', 'ROQUI');
+insert into Peliculas values (88, 'X7', 'asdasdadsjfnjkdfnsdasd', 50, '12-12-17', 'PRODUCTORA18');
+
+insert into Reviews_peliculas values (1, 1, 1, 'asdasdasdasd', 'puto el que lo lee', '12-12-17', 1);
+insert into Reviews_peliculas values (2, 1, 2, 'asdasdasdasd', 'puto el que lo lee', '12-12-17', 2);
+insert into Reviews_peliculas values (3, 5, 6, 'as34r3rdasdag5g4sdasd', 'puto el que lo lee', '12-12-17', 3);
+insert into Reviews_peliculas values (4, 2, 8, 'asdasr3444r3dasdasd', 'puto el que lo lee', '12-12-17', 4);
+insert into Reviews_peliculas values (5, 4, 2, '34r3r4asdasdasdasd', 'puto el que lo lee', '12-12-17', 5);
+insert into Reviews_peliculas values (6, 4, 8, '34r3r4asdasdasdasd', 'puto el que lo lee', '12-12-17', 6);
+insert into Reviews_peliculas values (7, 8, 1, 'asdasdadsjfnjkdfnsdasd', 'puto el que lo lee', '12-12-17', 7);
+insert into Reviews_peliculas values (8, 8, 2, 'asdasdadsjfnjkdfnsdasd', 'puto el que lo lee', '12-12-17', 8);
+
+insert into Series values (1, 'X', 'asdasdasdasd', 120, '12-12-17', 'ACCION', 'MARVEL');
+insert into Series values (2, 'X1', 'asdasr3444r3dasdasd', 123, '12-12-17', 'ANIME', 'Xd');
+insert into Series values (3, 'X2', 'asdasdasdas34r34rd', 60, '12-12-17', 'HORROR', 'MARVasdEL');
+insert into Series values (4, 'X3', '34r3r4asdasdasdasd', 200, '12-12-17', 'HORROR', 'SONY');
+insert into Series values (5, 'X4', 'as34r3rdasdag5g4sdasd', 133, '12-12-17', 'PORNO', 'KHALIFA PRODUCTIONS');
+insert into Series values (6, 'X5', 'asdasdf45g45gasdasd', 112, '12-12-17', 'COMICA', 'PELASO');
+insert into Series values (7, 'X6', 'asdasdasdasdfgvdffvd', 100, '12-12-17', 'ACCION', 'ROQUI');
+insert into Series values (8, 'X7', 'asdasdadsjfnjkdfnsdasd', 50, '12-12-17', 'NO QUERRAS SABER', 'PRODUCTORA18');
+
+insert into Capitulos values (1, 'X', 'asdasdasdasd', 120, 2, 1, 120, '12-12-17', 'MARVEL');
+insert into Capitulos values (2, 'X1', 'asdasr3444r3dasdasd', 123, 3, 3, 123, '12-12-17', 'Xd');
+insert into Capitulos values (3, 'X2', 'asdasdasdas34r34rd', 60, 4, 4, 60, '12-12-17', 'MARVasdEL');
+insert into Capitulos values (4, 'X3', '34r3r4asdasdasdasd', 200, 5, 7, 200, '12-12-17', 'SONY');
+insert into Capitulos values (5, 'X4', 'as34r3rdasdag5g4sdasd', 133, 2, 8, 69, '12-12-17', 'KHALIFA PRODUCTIONS');
+insert into Capitulos values (6, 'X5', 'asdasdf45g45gasdasd', 112, 9, 1, 112, '12-12-17', 'PELASO');
+insert into Capitulos values (7, 'X6', 'asdasdasdasdfgvdffvd', 100, 21, 5, 100, '12-12-17', 'ROQUI');
+insert into Capitulos values (8, 'X7', 'asdasdadsjfnjkdfnsdasd', 50, 7612, 5, 50, '12-12-17', 'PRODUCTORA18');
+
+insert into Reviews_capitulos values (1, 1, 1, 'X', 'asdasdasdasd', '12-12-17', 1);
+insert into Reviews_capitulos values (2, 1, 3, 'X1', 'asdasr3444r3dasdasd', '12-12-17', 2);
+insert into Reviews_capitulos values (3, 3, 5, 'X2', 'asdasdasdas34r34rd', '12-12-17', 3);
+insert into Reviews_capitulos values (4, 4, 6, 'X3', '34r3r4asdasdasdasd', '12-12-17', 4);
+insert into Reviews_capitulos values (5, 4, 7, 'X4', 'as34r3rdasdag5g4sdasd', '12-12-17', 5);
+insert into Reviews_capitulos values (6, 8, 8, 'X5', 'asdasdf45g45gasdasd', '12-12-17', 1);
+insert into Reviews_capitulos values (7, 7, 1, 'X6', 'asdasdasdasdfgvdffvd', '12-12-17', 2);
+insert into Reviews_capitulos values (8, 7, 4, 'X7', 'asdasdadsjfnjkdfnsdasd', '12-12-17', 3);
+insert into Reviews_capitulos values (9, 5, 6, 'X8', 'asdasdadsjfnjkdfnsdasd', '12-12-17', 4);
+insert into Reviews_capitulos values (10, 2, 8, 'X7', 'asdasdadsjfnjkdfnsdasd', '12-12-17', 5);
+insert into Reviews_capitulos values (11, 2, 8, 'X7', 'asdasdadsjfnjkdfnsdasd', '12-12-17', 1);
 
 
 
