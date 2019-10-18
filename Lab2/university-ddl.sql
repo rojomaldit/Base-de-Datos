@@ -32,6 +32,16 @@ SELECT MAX(ins), MIN(ins) FROM (
 
 -- EJ 4
 SELECT * FROM course
+WHERE title LIKE 'Jap%';
+
+-- EJ 5
+SELECT * FROM course
+JOIN takes USING (course_id)
+JOIN instructor USING (ID)
+WHERE dept_name LIKE 'Comp%';
+
+-- ???
+
 where title like "Comp%";
 
 -- EJ 5
