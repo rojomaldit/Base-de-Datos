@@ -111,6 +111,25 @@ insert into Reviews_capitulos values (9, 5, 6, 'X8', 'asdasdadsjfnjkdfnsdasd', '
 insert into Reviews_capitulos values (10, 2, 8, 'X7', 'asdasdadsjfnjkdfnsdasd', '12-12-17', 5);
 insert into Reviews_capitulos values (11, 2, 8, 'X7', 'asdasdadsjfnjkdfnsdasd', '12-12-17', 1);
 
+insert into Personas values (1, 'Marcos', 'Gradac', '29-01-18', 'me_gusta_la_pija.com', 'actor');
+insert into Personas values (2, 'asdasd1', 'asdasd2', '29-01-18', 'asdasd.com', 'director');
+insert into Personas values (3, 'askldasd', 'asdscfsda', '29-01-18', 'asd.com', 'actor');
+insert into Personas values (4, 'asldalksd', 'aklsndas', '29-01-18', 'sqdqds.com', 'actor');
+insert into Personas values (5, 'asdknansd', 'asndnasd', '29-01-18', 'c,daskl.com', 'director');
+insert into Personas values (6, 'asiduasohd', 'ad,dn,m', '29-01-18', 'oasdpo.com', 'actor');
+insert into Personas values (7, 'asmdasd', '1puhdjanks', '29-01-18', 'xcnzmcb.com', 'actor');
+insert into Personas values (8, 'amscas', 'asjdhakjshd', '29-01-18', 'hdaskjd.com', 'director');
+
+insert into Dirige_capitulo values (1, 2, 'Protagonista');
+insert into Dirige_capitulo values (1, 2, 'Secundario');
+insert into Dirige_capitulo values (7, 6, 'Protagonista');
+insert into Dirige_capitulo values (6, 5, 'Secundario');
+insert into Dirige_capitulo values (3, 7, 'Protagonista');
+insert into Dirige_capitulo values (1, 8, 'Secundario');
+insert into Dirige_capitulo values (4, 1, 'Protagonista');
+insert into Dirige_capitulo values (2, 8, 'Secundario');
+insert into Dirige_capitulo values (5, 7, 'Protagonista');
+insert into Dirige_capitulo values (4, 2, 'Secundario');
 
 
 
