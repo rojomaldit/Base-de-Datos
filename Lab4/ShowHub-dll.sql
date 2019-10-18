@@ -1,4 +1,18 @@
+drop table if exists `Telefonos`;
+drop table if exists `Reviews_peliculas`;
+drop table if exists `Reviews_capitulos`;
 drop table if exists `Clientes`;
+drop table if exists `Roles`;
+drop table if exists `Empleados`;
+drop table if exists `Actua_capitulo`;
+drop table if exists `Dirige_capitulo`;
+drop table if exists `Capitulos`;
+drop table if exists `Actua_pelicula`;
+drop table if exists `Generos`;
+drop table if exists `Dirige_pelicula`;
+drop table if exists `Peliculas`;
+drop table if exists `Personas`;
+drop table if exists `Series`;
 
 CREATE TABLE `Clientes` (
   `id` int PRIMARY KEY AUTO_INCREMENT,
@@ -13,7 +27,6 @@ CREATE TABLE `Clientes` (
   `fecha_de_suscripcion` date
 );
 
-drop table if exists `Telefonos`;
 
 CREATE TABLE `Telefonos` (
   `id` int PRIMARY KEY AUTO_INCREMENT,
@@ -21,7 +34,6 @@ CREATE TABLE `Telefonos` (
   `telefono` varchar(255)
 );
 
-drop table if exists `Empleados`;
 
 CREATE TABLE `Empleados` (
   `id` int PRIMARY KEY AUTO_INCREMENT,
@@ -35,7 +47,6 @@ CREATE TABLE `Empleados` (
   `rol_admin` varchar(255) NOT NULL
 );
 
-drop table if exists `Roles`;
 
 CREATE TABLE `Roles` (
   `id` int PRIMARY KEY AUTO_INCREMENT,
@@ -43,7 +54,6 @@ CREATE TABLE `Roles` (
   `rol` ENUM ('admin_usuarios_clientes', 'admin_usuarios_empleados', 'admin_carga_productos')
 );
 
-drop table if exists `Reviews_peliculas`;
 
 CREATE TABLE `Reviews_peliculas` (
   `id` int PRIMARY KEY AUTO_INCREMENT,
@@ -55,7 +65,6 @@ CREATE TABLE `Reviews_peliculas` (
   `calificacion` int
 );
 
-drop table if exists `Reviews_capitulos`;
 
 CREATE TABLE `Reviews_capitulos` (
   `id` int PRIMARY KEY AUTO_INCREMENT,
@@ -67,7 +76,6 @@ CREATE TABLE `Reviews_capitulos` (
   `calificacion` int
 );
 
-drop table if exists `Capitulos`;
 
 CREATE TABLE `Capitulos` (
   `id` int PRIMARY KEY AUTO_INCREMENT,
@@ -81,7 +89,6 @@ CREATE TABLE `Capitulos` (
   `productora` varchar(255)
 );
 
-drop table if exists `Peliculas`;
 
 CREATE TABLE `Peliculas` (
   `id` int PRIMARY KEY AUTO_INCREMENT,
@@ -92,7 +99,6 @@ CREATE TABLE `Peliculas` (
   `productora` varchar(255)
 );
 
-drop table if exists `Generos`;
 
 CREATE TABLE `Generos` (
   `id` int PRIMARY KEY AUTO_INCREMENT,
@@ -100,7 +106,6 @@ CREATE TABLE `Generos` (
   `genero` varchar(255)
 );
 
-drop table if exists `Actua_capitulo`;
 
 CREATE TABLE `Actua_capitulo` (
   `id_capitulo` int,
@@ -108,14 +113,12 @@ CREATE TABLE `Actua_capitulo` (
   `rol` varchar(255)
 );
 
-drop table if exists `Dirige_pelicula`;
 
 CREATE TABLE `Dirige_pelicula` (
   `id_pelicula` int,
   `id_director` int
 );
 
-drop table if exists `Dirige_capitulo`;
 
 CREATE TABLE `Dirige_capitulo` (
   `id_capitulo` int,
@@ -123,7 +126,6 @@ CREATE TABLE `Dirige_capitulo` (
   `rol` varchar(255)
 );
 
-drop table if exists `Actua_pelicula`;
 
 CREATE TABLE `Actua_pelicula` (
   `id_pelicula` int,
@@ -131,7 +133,6 @@ CREATE TABLE `Actua_pelicula` (
   `rol` ENUM ('protagonista', 'secundario')
 );
 
-drop table if exists `Personas`;
 
 CREATE TABLE `Personas` (
   `id` int PRIMARY KEY AUTO_INCREMENT,
@@ -142,7 +143,6 @@ CREATE TABLE `Personas` (
   `trabajo` ENUM ('director', 'actor') NOT NULL
 );
 
-drop table if exists `Series`;
 
 CREATE TABLE `Series` (
   `id` int PRIMARY KEY AUTO_INCREMENT,
