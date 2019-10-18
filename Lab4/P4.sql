@@ -1,8 +1,8 @@
 -- EJ 1
 -- Listar los datos de los clientes suscritos al plan
 -- PREMIUM con una determinada fecha de suscripción
-SELECT * FROM Cliente
-WHERE fecha_de_suscripcion = '15/02/2015' AND
+SELECT * FROM Clientes
+WHERE fecha_de_suscripcion = '15-02-2015' AND
       suscripcion = 'Premium';
 
 -- EJ 2
@@ -11,7 +11,7 @@ SELECT * FROM Peliculas
 JOIN Actua_pelicula ON Peliculas.id = Actua_pelicula.id_pelicula
 JOIN Personas ON Actua_pelicula.id_actor = Personas.id
 WHERE Actua_pelicula.rol = 'Protagonista' AND
-      Persona.nombre = 'X';
+      Personas.nombre = 'X';
 
 -- EJ 3
 -- Listar los episodios correspondientes a un programa de televisión X
