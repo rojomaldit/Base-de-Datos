@@ -43,7 +43,19 @@ WITH R AS (
 SELECT * FROM instructor as i JOIN R
 ON i.ID = R.ID;
 
+-- Ej 6
+DROP VIEW R;
+CREATE VIEW R AS (
+	SELECT ID FROM student WHERE tot_cred = 0
+);
+INSERT IGNORE INTO student(ID, name, dept_name, tot_cred)
+SELECT ID, name, dept_name, 0 FROM instructor;
 
+-- EJ 7
+DELETE FROM student
+WHERE ID NOT IN (SELECT ID FROM R);
+
+select * from student;
   
 -- EJ 9
 WITH R AS (
@@ -53,7 +65,17 @@ WITH R AS (
 )
 UPDATE instructor as ins
 SET salary = 1000 * (SELECT count FROM R WHERE R.ID = ins.ID);
-    
-    
-    
-    
+
+DROP VIEW R2;
+CREATE VIEW R2 AS (
+	SELECT ID, name, dept_name FROM instructor
+	WHERE ID NOT IN (
+		SELECT ID FROM student
+	)
+);
+
+SELECT * FROM instructor WHERE ID = 14365;
+
+INSERT INTO student(ID, name, dept_name)
+SELECT ID, name, dept_name FROM R1 WHERE student.ID = R.ID;
+
